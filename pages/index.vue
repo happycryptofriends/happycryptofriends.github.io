@@ -62,7 +62,6 @@ export default {
     font-size: 4rem;
     color: white;
     font-weight: 500;
-    margin-top: -3rem;
   }
 }
 </style>
