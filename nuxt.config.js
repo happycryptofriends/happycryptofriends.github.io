@@ -39,8 +39,7 @@ const config = {
   },
   router: {
     linkActiveClass: 'is-active',
-    linkExactActiveClass: 'is-exact-active',
-    base: '/pumpscommunity/'
+    linkExactActiveClass: 'is-exact-active'
   },
   loading: {
     color: '#5CA3FD',
