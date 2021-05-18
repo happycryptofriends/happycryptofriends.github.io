@@ -1,18 +1,43 @@
 <template>
   <div class="page">
     <div id="particles-js" class="particles"></div>
-    <h1 class="coming-soon">Coming soon</h1>
+    <CountdownSection :deadline="deadline"/>
+    <h1 class="coming-soon">
+      Next pump coming soon
+    </h1>
   </div>
 </template>
 
 <script>
+import CountdownSection from '~/components/CountdownSection'
 export default {
   name: 'IndexPage',
+  components: {
+    CountdownSection
+  },
+  data () {
+    return {
+      // date: new Date(Date.now() + 15 * 24 * 60 * 60 * 1000),
+      date: new Date('2021-06-01'),
+      deadline: undefined,
+      startTime: Date.now()
+    }
+  },
   mounted () {
     require('particles.js')
     window.particlesJS.load('particles-js', '/particles.json', function () {
       console.log('callback - particles.js config loaded')
     })
+    this.updateDate()
+  },
+  methods: {
+    updateDate () {
+      this.date = new Date(this.date.getTime() - 1000)
+      this.deadline = this.date.getTime() - this.startTime
+      setTimeout(() => {
+        this.updateDate()
+      }, 1000)
+    }
   }
 }
 </script>
@@ -24,9 +49,11 @@ export default {
   left: 0;
   right: 0;
   bottom: 0;
+  z-index: -1;
 }
 .page {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
