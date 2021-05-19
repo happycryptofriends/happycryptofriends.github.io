@@ -1,12 +1,59 @@
+@import '~normalize.css';
+
 html {
   margin: 0;
   padding: 0;
 }
+
 body {
   font-family: Commissioner, Roboto, sans-serif;
   background-color: #111111;
+  background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
   height: 100vh;
   padding: 0;
   margin: 0;
   color: white;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.button {
+  display: inline-flex;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  padding: 0 1rem;
+  border-radius: 4px;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s all ease;
+  font-weight: 500;
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.18);
+  background-image: linear-gradient(160deg, #ffdf36 0%, #d9a704 100%);
+
+  &:hover {
+    background-color: rgba(255,255,255,0.3);
+  }
+}
+
+p {
+  .button {
+    margin-right: 0.5rem;
+  }
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: calc(100vh - 2.5rem);
 }

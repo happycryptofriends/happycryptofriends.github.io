@@ -61,10 +61,10 @@ export default {
   .countdown-item {
     display: flex;
     flex-direction: column;
-    width: 140px;
-    padding: 2rem 0.75rem;
+    width: 148px;
+    padding: 2rem 0;
     border-radius: 6px;
-    background-color: rgba(255,255,255,0.05);
+    background-color: rgba(255,255,255,0.1);
     margin: 0 0.5rem;
   }
   .countdown-value {

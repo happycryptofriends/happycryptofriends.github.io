@@ -1,18 +1,55 @@
 <template>
   <div class="page">
     <div id="particles-js" class="particles"></div>
-    <CountdownSection :deadline="deadline"/>
-    <h1 class="coming-soon">
-      Next pump coming soon
-    </h1>
+    <MainMenu />
+    <div class="section">
+      <CountdownSection :deadline="deadline" />
+      <h1 class="coming-soon">
+        Next pump coming soon
+      </h1>
+    </div>
+    <div
+      id="mission"
+      class="section"
+    >
+      <h3>Our Mission</h3>
+      <p>We happy to chat with you in our Discord server, also we duplicate all announcements to  our telegram channel</p>
+    </div>
+    <div
+      id="faq"
+      class="section"
+    >
+      <h3>FAQ</h3>
+      <p>We happy to chat with you in our Discord server, also we duplicate all announcements to  our telegram channel</p>
+    </div>
+    <div
+      id="about"
+      class="section"
+    >
+      <h3>About Us</h3>
+      <p>We happy to chat with you in our Discord server, also we duplicate all announcements to  our telegram channel</p>
+    </div>
+    <div
+      id="contact"
+      class="section"
+    >
+      <h3>Contact</h3>
+      <p>We happy to chat with you in our Discord server, also we duplicate all announcements to  our telegram channel</p>
+      <p>
+        <a href="https://discord.gg/DWHW3RfT6m" class="button">Discord</a>
+        <a href="" class="button">Telegram</a>
+      </p>
+    </div>
   </div>
 </template>
 
 <script>
+import MainMenu from '~/components/MainMenu'
 import CountdownSection from '~/components/CountdownSection'
 export default {
   name: 'IndexPage',
   components: {
+    MainMenu,
     CountdownSection
   },
   data () {
@@ -55,8 +92,9 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   height: 100vh;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
 
   .coming-soon {
     font-size: 4rem;
