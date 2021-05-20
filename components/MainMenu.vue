@@ -2,24 +2,43 @@
   <div class="main-menu">
     <div class="content">
       <div class="left-menu">
-        <div class="menu-item">
-          <img class="logo" src="/logo.png" alt="Happy Crypto Friends">
+        <nuxt-link
+          to="/"
+          class="menu-item"
+        >
+          <img
+            class="logo"
+            src="/logo.png"
+            alt="Happy Crypto Friends"
+          >
           Happy Crypto Friends
-        </div>
+        </nuxt-link>
       </div>
       <div class="right-menu">
-        <a href="#mission" class="menu-item">
+        <nuxt-link
+          to="/#mission"
+          class="menu-item"
+        >
           Mission
-        </a>
-        <a href="#faq" class="menu-item">
+        </nuxt-link>
+        <nuxt-link
+          to="/#faq"
+          class="menu-item"
+        >
           FAQ
-        </a>
-        <a href="#about" class="menu-item">
+        </nuxt-link>
+        <nuxt-link
+          to="/#about"
+          class="menu-item"
+        >
           About Us
-        </a>
-        <a href="#contact" class="menu-item">
+        </nuxt-link>
+        <nuxt-link
+          to="/#contact"
+          class="menu-item"
+        >
           Contact
-        </a>
+        </nuxt-link>
       </div>
     </div>
   </div>
@@ -56,23 +75,6 @@ export default {
     width: 36px;
     height: 36px;
     margin-right: 0.5rem;
-  }
-
-  .menu-item {
-    display: inline-flex;
-    align-items: center;
-    height: 2.5rem;
-    line-height: 2.5rem;
-    padding: 0 1rem;
-    border-radius: 4px;
-    background-color: transparent;
-    color: white;
-    text-decoration: none;
-    transition: 0.3s all ease;
-
-    &:hover {
-      background-color: rgba(255,255,255,0.1);
-    }
   }
 }
 </style>

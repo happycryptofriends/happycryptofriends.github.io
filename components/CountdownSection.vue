@@ -57,6 +57,8 @@ export default {
 .countdown-section {
   display: flex;
   justify-content: space-between;
+  margin: 0 auto;
+  width: 740px;
 
   .countdown-item {
     display: flex;
