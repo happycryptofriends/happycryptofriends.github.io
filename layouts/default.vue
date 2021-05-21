@@ -4,13 +4,15 @@
     <MainMenu />
     <Nuxt/>
     <div class="section footer">
-      <p>
+      <div class="left-footer">
         <nuxt-link
           to="/"
           class="menu-item is-small"
         >
           © 2021 Happy Crypto Friends
         </nuxt-link>
+      </div>
+      <div class="right-footer">
         <nuxt-link
           to="/terms"
           class="menu-item is-small"
@@ -23,7 +25,7 @@
         >
           Privacy Policy
         </nuxt-link>
-      </p>
+      </div>
     </div>
   </div>
 </template>
@@ -60,8 +62,13 @@ export default {
 }
 .footer {
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
   padding-bottom: 1rem;
+
+  .left-footer, .right-footer {
+    display: flex;
+    align-items: center;
+  }
 
   .item {
     margin-right: 1rem;

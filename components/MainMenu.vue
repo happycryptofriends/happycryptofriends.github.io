@@ -59,7 +59,7 @@ export default {
   padding: 0 2rem;
 
   .content {
-    background-color: rgba(56, 184, 142, 0.8);
+    background-color: rgba(56, 184, 142, 0.75);
     display: flex;
     justify-content: space-between;
     padding: 1rem 0;

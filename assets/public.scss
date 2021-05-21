@@ -78,6 +78,10 @@ h3 {
   .icon {
     margin: 0 0.5rem 0 -0.5rem;
   }
+
+  & + h4 {
+    margin-top: 0
+  }
 }
 h4 {
   font-weight: 600;

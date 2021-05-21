@@ -1,10 +1,40 @@
 <template>
   <div class="index-page">
     <div class="section">
+      <h1>Honest Pump and Dump</h1>
       <CountdownSection :deadline="deadline" />
-      <h1 class="coming-soon">
-        Next pump coming soon
-      </h1>
+      <h5>
+        June 1st - 8pm GMT - 4pm EST <br>
+        Exchange: Hotbit - pair USDT <br>
+        Pump Target: 300% - 1000%
+      </h5>
+      <p>Join us on Discord and Telegram</p>
+      <p>
+        <a
+          href="https://discord.gg/2WXEMAah"
+          target="_blank"
+          class="button"
+        >
+          <img
+            class="icon"
+            src="/icons/discord.svg"
+            alt="discrod"
+          />
+          Discord
+        </a>
+        <a
+          href=""
+          class="button"
+          target="_blank"
+        >
+          <img
+            class="icon"
+            src="/icons/telegram.svg"
+            alt="Telegram"
+          />
+          Telegram
+        </a>
+      </p>
     </div>
     <MissionSection />
     <FAQSection />
@@ -53,13 +83,10 @@ export default {
 
 <style lang="scss" scoped>
 .index-page {
-  padding-top: 10rem;
+  padding-top: 2rem;
 
-  .coming-soon {
-    font-size: 4rem;
-    color: white;
-    font-weight: 500;
-    text-align: center;
+  .countdown-section {
+    margin-bottom: 2rem;
   }
 }
 </style>
