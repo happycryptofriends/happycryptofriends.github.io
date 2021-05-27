@@ -58,22 +58,31 @@ export default {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  width: 740px;
 
   .countdown-item {
     display: flex;
     flex-direction: column;
-    width: 148px;
-    padding: 2rem 0;
+    width: 134px;
+    padding: 1.75rem 0;
     border-radius: 6px;
     background-color: rgba(255,255,255,0.1);
-    margin: 0 0.5rem;
+    margin: 0 0.75rem;
+
+    @media (max-width: 700px) {
+      width: 80px;
+      padding: 0.5rem 0;
+      margin: 0 0.5rem;
+    }
   }
   .countdown-value {
-    font-size: 5rem;
+    font-size: 70px;
     text-align: center;
     padding: 0 0 0;
     font-weight: 500;
+
+    @media (max-width: 700px) {
+      font-size: 48px;
+    }
   }
   .small-text {
     font-size: 16px;

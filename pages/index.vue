@@ -1,5 +1,5 @@
 <template>
-  <div class="index-page">
+  <div class="index-page page-content">
     <div class="section">
       <h1>Honest Pump and Dump</h1>
       <CountdownSection :deadline="deadline" />
@@ -11,7 +11,7 @@
       <p>Join us on Discord and Telegram</p>
       <p>
         <a
-          href="https://discord.gg/2WXEMAah"
+          href="https://discord.gg/zvm7YKP3kJ"
           target="_blank"
           class="button"
         >

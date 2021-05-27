@@ -6,8 +6,8 @@
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
-    "start": "nuxt statr",
-    "generate": "nuxt generate",
+    "start": "nuxt start",
+    "generate": "cross-env NODE_ENV=production nuxt generate",
     "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "author": "pumpscommunity",

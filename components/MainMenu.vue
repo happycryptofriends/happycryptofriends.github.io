@@ -11,7 +11,7 @@
             src="/logo.png"
             alt="Happy Crypto Friends"
           >
-          Happy Crypto Friends
+          <span class="logo-text">Happy Crypto Friends</span>
         </nuxt-link>
       </div>
       <div class="right-menu">
@@ -57,6 +57,11 @@ export default {
   color: white;
   width: 100%;
   padding: 0 2rem;
+  z-index: 1;
+
+  @media (max-width: 700px) {
+    padding: 0 0.5rem;
+  }
 
   .content {
     background-color: rgba(56, 184, 142, 0.75);
@@ -75,6 +80,12 @@ export default {
     width: 36px;
     height: 36px;
     margin-right: 0.5rem;
+  }
+
+  .logo-text {
+    @media (max-width: 700px) {
+      display: none;
+    }
   }
 }
 </style>

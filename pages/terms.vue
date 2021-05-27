@@ -1,5 +1,5 @@
 <template>
-  <div class="terms-page">
+  <div class="terms-page page-content">
     <div class="section">
       <h1>Terms of Service</h1>
       <p>

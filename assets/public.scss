@@ -1,4 +1,12 @@
+:root {
+  --color-primary: rgb(254, 188, 8);
+  --color-primary-transparent: rgb(254, 188, 8, 0.5);
+  --media-mobile: 700px;
+}
+
 @import '~normalize.css';
+@import 'button.scss';
+@import 'forms.scss';
 
 html {
   margin: 0;
@@ -30,28 +38,9 @@ body {
   scroll-behavior: smooth;
 }
 
-.button {
-  display: inline-flex;
-  align-items: center;
-  height: 2.5rem;
-  line-height: 2.5rem;
-  padding: 0 1rem;
-  border-radius: 4px;
-  color: white;
-  text-decoration: none;
-  transition: 0.3s all ease;
-  font-weight: 500;
-  font-size: 16px;
-  background-color: rgba(255,255,255,0.2);
-
-  &:hover {
-    background-color: rgba(255,255,255,0.3);
-  }
-
-  .icon {
-    margin-left: -0.25rem;
-    width: 32px;
-    height: 32px;
+.page-content {
+  @media (max-width: 700px) {
+    padding-top: 6rem;
   }
 }
 
@@ -64,6 +53,9 @@ p {
 h1 {
   font-size: 3rem;
   font-weight: 600;
+  @media (max-width: 700px) {
+    font-size: 2rem;
+  }
 }
 h3 {
   font-weight: 600;
@@ -75,8 +67,15 @@ h3 {
   padding: 0 2rem;
   border-radius: 4px;
 
+  @media (max-width: 700px) {
+    font-size: 2rem;
+  }
+
   .icon {
     margin: 0 0.5rem 0 -0.5rem;
+    @media (max-width: 700px) {
+      width: 36px;
+    }
   }
 
   & + h4 {
@@ -88,6 +87,9 @@ h4 {
   font-size: 2rem;
   margin: 3rem 0 0.5rem;
   align-self: flex-start;
+  @media (max-width: 700px) {
+    font-size: 1.5rem;
+  }
 }
 h5 {
   font-size: 16px;
@@ -101,21 +103,28 @@ h5 {
   justify-content: center;
   align-items: center;
   padding: 8rem 1.5rem;
-  max-width: 100%;
-  width: 900px;
+  max-width: 900px;
+  width: 100%;
+
+  @media (max-width: 700px) {
+    padding: 4rem 1rem;
+  }
 }
 
 .menu-item {
   display: inline-flex;
   align-items: center;
   height: 2.5rem;
-  line-height: 2.5rem;
   padding: 0 1rem;
   border-radius: 4px;
   background-color: transparent;
   color: white;
   text-decoration: none;
   transition: 0.3s all ease;
+
+  @media (max-width: 700px) {
+    padding: 0 0.75rem;
+  }
 
   &:hover {
     background-color: rgba(255,255,255,0.1);

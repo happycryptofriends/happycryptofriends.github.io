@@ -14,7 +14,7 @@
     <p>We happy to chat with you in our Discord server, also we duplicate all announcements to  our telegram channel</p>
     <p>
       <a
-        href="https://discord.gg/2WXEMAah"
+        href="https://discord.gg/zvm7YKP3kJ"
         target="_blank"
         class="button"
       >

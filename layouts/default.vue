@@ -73,5 +73,9 @@ export default {
   .item {
     margin-right: 1rem;
   }
+
+  @media (max-width: 700px) {
+    flex-direction: column-reverse;
+  }
 }
 </style>

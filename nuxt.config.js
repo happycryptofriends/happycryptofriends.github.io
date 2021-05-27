@@ -1,8 +1,11 @@
 'use strict'
 
+const env = require('./env')
+
 const config = {
   target: 'static',
   ssr: false,
+  env,
   telemetry: false,
   server: {
     host: process.env.HOST || '127.0.0.1',
@@ -21,8 +24,16 @@ const config = {
       { rel: 'preconnect', href: 'https://fonts.gstatic.com' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Commissioner:wght@300;400;500;600;700&display=swap' },
       { rel: 'icon', type: 'image/png', hid: 'favicon-16', href: 'logo.png' }
-    ]
+    ],
+    script: [{
+      src: 'https://cdn.socket.io/4.1.1/socket.io.min.js',
+      integrity: 'sha384-cdrFIqe3RasCMNE0jeFG9xJHog/tgOVC1E9Lzve8LQN1g5WUHo0Kvk1mawWjxX7a',
+      crossorigin: 'anonymous'
+    }]
   },
+  plugins: [
+    { src: './plugins/socket.io.js', mode: 'client' }
+  ],
   css: [
     { src: './assets/public.scss', lang: 'scss' }
   ],
