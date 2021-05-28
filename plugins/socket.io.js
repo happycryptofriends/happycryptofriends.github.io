@@ -32,7 +32,7 @@ socket.io.on('reconnection_attempt', i => {
 socket.on('connect_error', (err) => {
   info('connect_error')
   console.log('err.message', err.message)
-  if (err.message !== 'invalid_token') {
+  if (err.message !== 'invalid_token' && token) {
     setTimeout(() => {
       socket.connect()
     }, 1000)
