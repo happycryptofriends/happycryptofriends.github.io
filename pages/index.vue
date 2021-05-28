@@ -1,17 +1,22 @@
 <template>
   <div class="index-page page-content">
     <div class="section">
-      <h1>Honest Pump and Dump</h1>
+      <h1>
+        Happy Crypto Friends<br>
+        <span class="is-small">Honest Pump and Dump</span>
+      </h1>
       <CountdownSection :deadline="deadline" />
       <h5>
-        June 1st - 8pm GMT - 4pm EST <br>
+        June 9th - 8pm GMT - 4pm EST <br>
         Exchange: Hotbit - pair USDT <br>
-        Pump Target: 300% - 1000%
+        Pump Target: 100% - 300%
       </h5>
-      <p>Join us on Discord and Telegram</p>
-      <p>
+      <p class="align-center">
+        Join us on Discord and Telegram
+      </p>
+      <p class="align-center">
         <a
-          href="https://discord.gg/zvm7YKP3kJ"
+          :href="discordChannel"
           target="_blank"
           class="button"
         >
@@ -23,7 +28,8 @@
           Discord
         </a>
         <a
-          href=""
+          v-if="telegramChannel"
+          :href="telegramChannel"
           class="button"
           target="_blank"
         >
@@ -38,8 +44,12 @@
     </div>
     <MissionSection />
     <FAQSection />
+    <ManifestoSection />
     <AboutSection />
-    <ContactSection />
+    <ContactSection
+      :discord="discordChannel"
+      :telegram="telegramChannel"
+    />
   </div>
 </template>
 
@@ -48,6 +58,7 @@ import CountdownSection from '~/components/CountdownSection'
 import MissionSection from '~/components/MissionSection'
 import FAQSection from '~/components/FAQSection'
 import AboutSection from '~/components/AboutSection'
+import ManifestoSection from '~/components/ManifestoSection'
 import ContactSection from '~/components/ContactSection'
 export default {
   name: 'IndexPage',
@@ -56,14 +67,17 @@ export default {
     MissionSection,
     FAQSection,
     AboutSection,
+    ManifestoSection,
     ContactSection
   },
   data () {
     return {
       // date: new Date(Date.now() + 15 * 24 * 60 * 60 * 1000),
-      date: new Date('2021-06-01'),
+      date: new Date('2021-06-09'),
       deadline: undefined,
-      startTime: Date.now()
+      startTime: Date.now(),
+      discordChannel: 'https://discord.gg/zvm7YKP3kJ',
+      telegramChannel: ''
     }
   },
   mounted () {
@@ -71,8 +85,7 @@ export default {
   },
   methods: {
     updateDate () {
-      this.date = new Date(this.date.getTime() - 1000)
-      this.deadline = this.date.getTime() - this.startTime
+      this.deadline = this.date.getTime() - Date.now()
       setTimeout(() => {
         this.updateDate()
       }, 1000)

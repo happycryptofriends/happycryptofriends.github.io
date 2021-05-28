@@ -12,12 +12,10 @@
       Our Mission
     </h3>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id enim sit amet
-      lacus efficitur euismod. Duis ut nibh turpis. Integer sed arcu ligula. Integer
-      et consequat velit. In laoreet cursus est, eu pretium lacus sollicitudin vel.
-      Vestibulum consectetur, massa vel ullamcorper iaculis, tortor tortor egestas arcu,
-      eu bibendum eros ipsum vel quam. Phasellus tempus imperdiet lacus id mollis. Donec
-      gravida nulla ut hendrerit convallis. Suspendisse varius iaculis velit at commodo.
+      We aim to making our world a happier place. We believe that good things happen when people act together with
+      the best intentions and a thorough plan.<br>
+      We want to build a community of ordinary people like ourselves to make money. Yes, it's risky.
+      Yes, we all must act fast. And, yes, we play fair: we are transparent, so all the community knows what and when we do.
     </p>
   </div>
 </template>

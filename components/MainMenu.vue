@@ -28,16 +28,16 @@
           FAQ
         </nuxt-link>
         <nuxt-link
+          to="/#manifesto"
+          class="menu-item"
+        >
+          Manifesto
+        </nuxt-link>
+        <nuxt-link
           to="/#about"
           class="menu-item"
         >
           About Us
-        </nuxt-link>
-        <nuxt-link
-          to="/#contact"
-          class="menu-item"
-        >
-          Contact
         </nuxt-link>
       </div>
     </div>

@@ -12,9 +12,9 @@
       Contact Us
     </h3>
     <p>We happy to chat with you in our Discord server, also we duplicate all announcements to  our telegram channel</p>
-    <p>
+    <p class="align-center">
       <a
-        href="https://discord.gg/zvm7YKP3kJ"
+        :href="discord"
         target="_blank"
         class="button"
       >
@@ -26,7 +26,8 @@
         Discord
       </a>
       <a
-        href=""
+        v-if="telegram"
+        :href="telegram"
         class="button"
         target="_blank"
       >
@@ -40,3 +41,17 @@
     </p>
   </div>
 </template>
+
+<script>
+export default {
+  name: 'ContactSection',
+  props: {
+    discord: {
+      type: String, default: ''
+    },
+    telegram: {
+      type: String, default: ''
+    }
+  }
+}
+</script>

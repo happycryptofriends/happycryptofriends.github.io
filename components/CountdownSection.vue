@@ -88,6 +88,10 @@ export default {
     font-size: 16px;
     text-align: center;
     font-weight: 300;
+
+    @media (max-width: 700px) {
+      font-size: 14px;
+    }
   }
 }
 </style>

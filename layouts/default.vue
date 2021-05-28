@@ -40,12 +40,12 @@ export default {
   },
   mounted () {
     require('particles.js')
-    window.particlesJS.load('particles-js', '/particles.json', function () {
-      console.log('callback - particles.js config loaded')
-    })
+    window.particlesJS.load('particles-js', '/particles.json')
     if (window.location.hash) {
       const el = document.querySelector(window.location.hash)
-      window.scrollTo({ top: el.offsetTop, behavior: 'smooth' })
+      if (el) {
+        window.scrollTo({ top: el.offsetTop, behavior: 'smooth' })
+      }
     }
   }
 }
