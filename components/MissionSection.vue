@@ -4,11 +4,6 @@
     class="section"
   >
     <h3>
-      <img
-        class="icon"
-        src="/icons/mission.svg"
-        alt="Our mission"
-      />
       Our Mission
     </h3>
     <p>

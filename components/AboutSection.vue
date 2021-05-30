@@ -4,11 +4,6 @@
     class="section"
   >
     <h3>
-      <img
-        class="icon"
-        src="/icons/info.svg"
-        alt="About us"
-      />
       About Us
     </h3>
     <p>

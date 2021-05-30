@@ -3,7 +3,8 @@ const token = getCookie('happyCryptoToken')
 const socket = window.io(process.env.socketHost, {
   auth: {
     token
-  }
+  },
+  reconnectionDelayMax: 60000
 })
 
 function getCookie (name) {
@@ -32,10 +33,9 @@ socket.io.on('reconnection_attempt', i => {
 socket.on('connect_error', (err) => {
   info('connect_error')
   console.log('err.message', err.message)
-  if (err.message !== 'invalid_token' && token) {
-    setTimeout(() => {
-      socket.connect()
-    }, 1000)
+  if (err.message === 'invalid_token' || !token) {
+    console.log('reconnection false')
+    socket.io.reconnection(false)
   }
 })
 

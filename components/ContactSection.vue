@@ -4,11 +4,6 @@
     class="section contact-section"
   >
     <h3>
-      <img
-        class="icon"
-        src="/icons/chat-room.svg"
-        alt="Contact Us"
-      />
       Contact Us
     </h3>
     <p>We happy to chat with you in our Discord server, also we duplicate all announcements to  our telegram channel</p>

@@ -31,13 +31,10 @@
       We created a few algorithms to:
       <ul>
         <li>
-          Analyze the market and spot interesting cryptocurrencies. {need some more data here to explain}
+          Analyze the market to spot interesting cryptocurrencies. It monitors orders and price movements and creates a list of potentially profitable cryptocurrencies.
         </li>
         <li>
-          Calculate the price movements and timings {need some more data here to explain}
-        </li>
-        <li>
-          Choose one of the suggested interesting cryptocurrencies. This one is based on a random number we get based on the text we see in the community chat. No way one can trick it.
+          Choose one of the suggested cryptocurrencies. This one is based on a random number generated from the text we see in the community chat. No way one can trick it.
         </li>
       </ul>
     </p>

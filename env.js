@@ -1,6 +1,7 @@
 const config = {
   default: {
-    socketHost: 'localhost:4003'
+    socketHost: 'happycryptofriends.github.io'
+    // socketHost: 'localhost:4003'
   },
   production: {
     socketHost: 'happycryptofriends.github.io'
