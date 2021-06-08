@@ -7,7 +7,7 @@
       </h1>
       <CountdownSection :deadline="deadline" />
       <h5>
-        June 9th - 8pm GMT - 4pm EST <br>
+        June 9th - 7pm GMT - 3pm EST <br>
         Exchange: Hotbit - pair USDT <br>
         Pump Target: 100% - 300%
       </h5>
@@ -73,7 +73,7 @@ export default {
   data () {
     return {
       // date: new Date(Date.now() + 15 * 24 * 60 * 60 * 1000),
-      date: new Date('2021-06-09'),
+      date: new Date('2021-06-17T19:00:00'),
       deadline: undefined,
       startTime: Date.now(),
       discordChannel: 'https://discord.gg/zvm7YKP3kJ',
